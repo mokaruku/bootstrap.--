@@ -1,0 +1,7 @@
+// 独自のスタイル
+
+@import './variables';
+@import './custom'; //オーバーライド（上書き）ファイル
+@import './bootstrap/bootstrap';
+@import './layout';
+@import './top';

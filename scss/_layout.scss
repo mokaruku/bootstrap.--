@@ -1,0 +1,18 @@
+/// ヘッダー
+.sk-header {
+  &-nav {
+      box-shadow: 0 2px 8px rgba(#000, .2);
+      opacity: .9;
+      background-color: #fff;
+  }
+
+  &-logo {
+      width: 50px;
+      height: auto;
+  }
+
+  .nav-item {
+      font-size: 1.4rem;
+      padding: 0 .7rem;
+  }
+}
