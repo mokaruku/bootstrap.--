@@ -2,13 +2,13 @@
 // ショーケース
 .showcase {
   background: url(../img/space_mountain.jpg) no-repeat center bottom;
-  background-size: cover;
+  background-size: cover;//ぴっちり埋まる
   &-overlay {
     padding-top: 120px;
     background-color: rgba(map-get($colors, primary), .8);
   }
   &-cover {
-    max-width: 300px;
+    max-width: 300px;//本のマックスサイズ
   }
   @include media-breakpoint-down(md) {
     &-title {
