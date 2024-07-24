@@ -1,18 +1,38 @@
-/// ヘッダー
+// ヘッダー
 .sk-header {
-  &-nav {
-      box-shadow: 0 2px 8px rgba(#000, .2);
-      opacity: .9;
-      background-color: #fff;
-  }
+    &-nav {
+        box-shadow: 0 2px 8px rgba(#000, .2);
+        opacity: .9;
+        background-color: #fff;
+    }
+    &-logo {
+        width: 50px;
+        height: auto;
+    }
+    .nav-item {
+        font-size: 1.4rem;
+        padding: 0 .7rem;
+    }
 
-  &-logo {
-      width: 50px;
-      height: auto;
-  }
+    .nav-link {
+        position: relative;
 
-  .nav-item {
-      font-size: 1.4rem;
-      padding: 0 .7rem;
-  }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            height: 5px;
+            background-color: $primary;
+            transform: scaleX(0);
+            // scale: 0 1;
+            transition: transform .2s;
+        }
+
+        &.active::after {
+            transform: scaleX(1);
+        }
+    }
+
 }

@@ -2,3 +2,4 @@
 @use './variables' as v;//バリアブルズのv
 $primary: map-get(v.$colors, primary);
 //$secondary: map-get(v.$colors, secondary);
+$primary: map-get(v.$colors, primary);
